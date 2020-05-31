@@ -10,6 +10,10 @@ img {
 	max-width: 100%;
 }
 
+p {
+	margin:0;
+}
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -23,14 +27,13 @@ a {
 }
 
 .page-header {
-	margin:0 0 150px 0;
+	margin:0 0 100px 0;
 }
 
 .page-title {
 	font-family: 'DM Serif Display', serif;
 	margin:0 0 45px 0;
 	font-size:2.5em;
-
 }
 
 .page-navigation {
@@ -55,9 +58,14 @@ ul.navigation-items li:not(:first-child)::before {
 }
 
 .page-content {
-	font-family: 'DM Serif Text', serif;
-	display:flex;
-	flex-direction:column;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	font-size:0.75em;
+	line-height:1.9em;
+}
+
+.page-content .siema {
+	margin-bottom:100px;
 }
 
 /** Responsive CSS **/
@@ -86,10 +94,6 @@ ul.navigation-items li:not(:first-child)::before {
 		font-size:1em;
 	}
 
-	.page-header {
-		margin:0 0 50px 0;
-	}
-
 	.page-title {
 		font-size:3em;
 		margin-bottom:15px;
@@ -98,11 +102,16 @@ ul.navigation-items li:not(:first-child)::before {
 	.page-content {
 		width:100%;
 		max-width:720px;
+		font-size:1em;
+		line-height:1.6em;
 	}
 
-	img {
-		width:100%;
-		max-width:720px;
+	.page-content .siema {
+		margin-bottom:50px;
+	}
+
+	.page-header {
+		margin:0 0 50px 0;
 	}
 
 }
